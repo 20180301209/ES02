@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Course;
+        {
+            var _name=null;
+            Course = function (name) {
+      _name = name;   }
+      Course.prototype.setColor = function (value) {
+      _name = value; }
+      Course.prototype.getColor = function () {
+      return _name;}
+}
+let course = new Course('sql'); 
+console.log(course.getColor());
+course.setColor('vue');
+console.log(course.getColor());
+console.log(_name);
+</script>
+
+</body>
+</html>
